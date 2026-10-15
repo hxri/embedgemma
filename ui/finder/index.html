@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drop a frame, hear the sound</title>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/atkinson-700-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/finder/sfx.css">
+</head>
+<body>
+<main class="sfx">
+  <header class="head">
+    <h1>Drop a frame. Hear the sound.</h1>
+    <p>A sound-effects finder with no tags. 2000 clips in 50 categories are indexed by EmbeddingGemma 2; a still frame is embedded into the same space and the three closest sounds come back.</p>
+  </header>
+
+  <div class="cols">
+    <section class="drop" id="drop" aria-label="Drop zone">
+      <input type="file" id="file" accept="image/*,video/*" hidden>
+      <div class="drop-inner" id="dropInner">
+        <img id="frame" alt="" hidden>
+        <div class="drop-hint" id="dropHint">
+          <strong>Drop a frame here</strong>
+          <span>an image, or a video file (its frame at 1 s is used), or paste one</span>
+          <button type="button" id="pick">Choose a file</button>
+        </div>
+      </div>
+      <p class="credit" id="credit"></p>
+    </section>
+
+    <section class="results" aria-label="Matching sounds">
+      <p class="status" id="status">Drop a frame, or pick one from the gallery below.</p>
+      <ol class="hits" id="hits"></ol>
+      <p class="sees" id="sees"></p>
+      <div class="method" role="group" aria-label="Matching route">
+        <span>Route</span>
+        <label><input type="radio" name="method" value="bridged" checked> frame to caption to sound</label>
+        <label><input type="radio" name="method" value="direct"> frame straight to sound</label>
+        <label><input type="radio" name="method" value="blend"> blend</label>
+      </div>
+    </section>
+  </div>
+
+  <section class="gallery" aria-label="Gallery">
+    <h2>Or try one of these</h2>
+    <ul id="gallery" class="grid"></ul>
+  </section>
+</main>
+<script type="module" src="/finder/sfx.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "ui/words/words.js"
+        ],
+        "createdAt": "2026-10-15T09:29:17.623Z",
+        "reason": "builder evidence: img src is assigned programmatically on the next line (querySelector('img').src = url), never ships empty"
+      }
+    ]
+  }
+}

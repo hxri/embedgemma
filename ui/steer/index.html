@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Move a point, read it back</title>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/atkinson-700-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/steer/steer.css">
+</head>
+<body>
+<main class="steer">
+  <header class="head">
+    <h1>Move a point. Read it back.</h1>
+    <p>Pick a clip, a sentence, or record yourself. Slide along five directions in EmbeddingGemma's space. DiffusionGemma then writes the sentence that lives at that point, and the nearest real clip and sound follow along.</p>
+  </header>
+
+  <div class="cols">
+    <section class="base" aria-label="Starting point">
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-tab="clip" aria-selected="true">A clip</button>
+        <button type="button" role="tab" data-tab="text" aria-selected="false">A sentence</button>
+        <button type="button" role="tab" data-tab="camera" aria-selected="false">Camera</button>
+      </div>
+      <div class="pane" data-pane="clip">
+        <form id="clipSearch" class="row"><input id="clipQuery" type="text" placeholder="find a clip: a man cooking" autocomplete="off"><button type="submit">Find</button><button type="button" id="randomClip">Random</button></form>
+        <ul class="thumbs" id="thumbs"></ul>
+      </div>
+      <div class="pane" data-pane="text" hidden>
+        <form id="textForm" class="row"><input id="textBase" type="text" placeholder="a man and a woman are walking a dog on a beach" autocomplete="off"><button type="submit">Use it</button></form>
+      </div>
+      <div class="pane" data-pane="camera" hidden>
+        <video id="preview" class="preview" autoplay muted playsinline></video>
+        <div class="row"><button type="button" id="record">Record 6 s</button><span id="recStatus" class="muted"></span></div>
+      </div>
+      <figure class="base-view" id="baseView" hidden>
+        <video id="baseVideo" muted loop playsinline autoplay></video>
+        <figcaption id="baseCaption"></figcaption>
+      </figure>
+    </section>
+
+    <section class="sliders" aria-label="Directions">
+      <div id="sliderList"></div>
+      <div class="row"><button type="button" id="reset">Reset</button><span class="muted" id="moved"></span></div>
+    </section>
+
+    <section class="around" aria-label="What is near this point">
+      <h2>Nearest real clip</h2>
+      <figure class="near-clip"><video id="nearVideo" muted loop playsinline autoplay></video><figcaption id="nearCaption"></figcaption></figure>
+      <h2>Nearest sound</h2>
+      <ul class="sounds" id="sounds"></ul>
+      <h2>Nearest captions</h2>
+      <ol class="captions" id="captions"></ol>
+    </section>
+  </div>
+
+  <section class="decode" aria-label="Decoded sentence">
+    <div class="row">
+      <button type="button" class="write" id="write" disabled>Write the sentence at this point</button>
+      <label class="check"><input type="checkbox" id="useHints" checked> let the nearest captions guide the wording</label>
+      <span class="muted" id="decodeStatus"></span>
+    </div>
+    <p class="sentence" id="sentence" aria-live="polite"></p>
+    <p class="muted" id="sentenceMeta"></p>
+    <details><summary>The other candidates and the hints</summary><ul id="cands" class="cands"></ul></details>
+  </section>
+</main>
+<script type="module" src="/steer/steer.js"></script>
+</body>
+</html>

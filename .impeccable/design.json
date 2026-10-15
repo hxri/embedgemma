@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-14T00:00:00Z",
+  "title": "Design System: Rythmo (working title)",
+  "extensions": {
+    "colorMeta": {
+      "bar": { "role": "primary", "displayName": "Sync Bar", "canonical": "#ff5a36", "tonalRamp": ["oklch(22% 0.09 35)", "oklch(32% 0.13 35)", "oklch(42% 0.17 35)", "oklch(52% 0.2 35)", "oklch(62% 0.22 35)", "oklch(71% 0.2 35)", "oklch(82% 0.12 35)", "oklch(94% 0.04 35)"] },
+      "ink-animals": { "role": "secondary", "displayName": "Animals Ink", "canonical": "#e8503f", "tonalRamp": ["oklch(22% 0.08 28)", "oklch(32% 0.12 28)", "oklch(42% 0.15 28)", "oklch(52% 0.18 28)", "oklch(62% 0.2 28)", "oklch(72% 0.16 28)", "oklch(83% 0.1 28)", "oklch(94% 0.04 28)"] },
+      "ink-nature": { "role": "secondary", "displayName": "Nature Ink", "canonical": "#52c472", "tonalRamp": ["oklch(22% 0.06 150)", "oklch(32% 0.09 150)", "oklch(42% 0.12 150)", "oklch(52% 0.15 150)", "oklch(62% 0.17 150)", "oklch(73% 0.17 150)", "oklch(84% 0.12 150)", "oklch(95% 0.04 150)"] },
+      "ink-human": { "role": "secondary", "displayName": "Human Ink", "canonical": "#f4c743", "tonalRamp": ["oklch(22% 0.05 90)", "oklch(32% 0.08 90)", "oklch(42% 0.1 90)", "oklch(52% 0.12 90)", "oklch(62% 0.14 90)", "oklch(72% 0.15 90)", "oklch(84% 0.16 90)", "oklch(95% 0.06 90)"] },
+      "ink-home": { "role": "secondary", "displayName": "Home Ink", "canonical": "#4b97f5", "tonalRamp": ["oklch(22% 0.07 260)", "oklch(32% 0.11 260)", "oklch(42% 0.14 260)", "oklch(52% 0.17 260)", "oklch(64% 0.17 260)", "oklch(74% 0.13 260)", "oklch(84% 0.08 260)", "oklch(95% 0.03 260)"] },
+      "ink-city": { "role": "secondary", "displayName": "City Ink", "canonical": "#ba8cf3", "tonalRamp": ["oklch(22% 0.07 300)", "oklch(32% 0.11 300)", "oklch(42% 0.14 300)", "oklch(52% 0.17 300)", "oklch(62% 0.17 300)", "oklch(72% 0.14 300)", "oklch(84% 0.09 300)", "oklch(95% 0.03 300)"] },
+      "white": { "role": "secondary", "displayName": "Playing-Cue White", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(100% 0 0)"] },
+      "ground": { "role": "neutral", "displayName": "Auditorium Ground", "canonical": "#121110", "tonalRamp": ["oklch(10% 0.004 70)", "oklch(16% 0.004 70)", "oklch(24% 0.005 70)", "oklch(34% 0.006 70)", "oklch(46% 0.007 70)", "oklch(60% 0.008 70)", "oklch(76% 0.01 70)", "oklch(95% 0.01 70)"] },
+      "ground-deep": { "role": "neutral", "displayName": "Ground Deep", "canonical": "#0a0908", "tonalRamp": ["oklch(8% 0.004 70)", "oklch(14% 0.004 70)", "oklch(22% 0.005 70)", "oklch(32% 0.006 70)", "oklch(44% 0.007 70)", "oklch(58% 0.008 70)", "oklch(74% 0.01 70)", "oklch(94% 0.01 70)"] },
+      "strip": { "role": "neutral", "displayName": "Band Charcoal", "canonical": "#1d1c19", "tonalRamp": ["oklch(12% 0.006 90)", "oklch(21% 0.007 90)", "oklch(30% 0.008 90)", "oklch(40% 0.009 90)", "oklch(52% 0.01 90)", "oklch(65% 0.012 90)", "oklch(80% 0.014 90)", "oklch(95% 0.012 90)"] },
+      "strip-hole": { "role": "neutral", "displayName": "Sprocket Hole", "canonical": "#0b0b0a", "tonalRamp": ["oklch(8% 0.003 90)", "oklch(15% 0.003 90)", "oklch(23% 0.004 90)", "oklch(33% 0.005 90)", "oklch(45% 0.006 90)", "oklch(59% 0.007 90)", "oklch(75% 0.008 90)", "oklch(94% 0.008 90)"] },
+      "strip-edge": { "role": "neutral", "displayName": "Band Edge", "canonical": "#2b2a26", "tonalRamp": ["oklch(14% 0.006 90)", "oklch(24% 0.007 90)", "oklch(33% 0.008 90)", "oklch(43% 0.009 90)", "oklch(54% 0.01 90)", "oklch(66% 0.012 90)", "oklch(80% 0.014 90)", "oklch(95% 0.012 90)"] },
+      "picture-edge": { "role": "neutral", "displayName": "Picture Edge", "canonical": "#2a2a2e", "tonalRamp": ["oklch(14% 0.006 280)", "oklch(24% 0.007 280)", "oklch(33% 0.008 280)", "oklch(43% 0.009 280)", "oklch(54% 0.01 280)", "oklch(66% 0.012 280)", "oklch(80% 0.012 280)", "oklch(95% 0.008 280)"] },
+      "hardware-edge": { "role": "neutral", "displayName": "Hardware Ring", "canonical": "#2f2f33", "tonalRamp": ["oklch(15% 0.006 280)", "oklch(26% 0.007 280)", "oklch(35% 0.008 280)", "oklch(45% 0.009 280)", "oklch(56% 0.01 280)", "oklch(68% 0.012 280)", "oklch(81% 0.012 280)", "oklch(95% 0.008 280)"] },
+      "hardware-edge-hover": { "role": "neutral", "displayName": "Hardware Ring, Hover", "canonical": "#55545b", "tonalRamp": ["oklch(15% 0.006 280)", "oklch(26% 0.007 280)", "oklch(35% 0.008 280)", "oklch(45% 0.009 280)", "oklch(56% 0.01 280)", "oklch(68% 0.012 280)", "oklch(81% 0.012 280)", "oklch(95% 0.008 280)"] },
+      "text": { "role": "neutral", "displayName": "Bone Text", "canonical": "#f4efe6", "tonalRamp": ["oklch(15% 0.01 80)", "oklch(27% 0.012 80)", "oklch(39% 0.014 80)", "oklch(51% 0.016 80)", "oklch(63% 0.018 80)", "oklch(75% 0.018 80)", "oklch(87% 0.016 80)", "oklch(95% 0.012 80)"] },
+      "text-dim": { "role": "neutral", "displayName": "Bone Text, Dim", "canonical": "#a69f92", "tonalRamp": ["oklch(15% 0.01 80)", "oklch(27% 0.012 80)", "oklch(39% 0.014 80)", "oklch(51% 0.016 80)", "oklch(63% 0.018 80)", "oklch(72% 0.018 80)", "oklch(85% 0.016 80)", "oklch(95% 0.012 80)"] },
+      "paper": { "role": "neutral", "displayName": "Sheet Paper", "canonical": "#efe8d8", "tonalRamp": ["oklch(15% 0.015 85)", "oklch(27% 0.02 85)", "oklch(39% 0.025 85)", "oklch(51% 0.03 85)", "oklch(63% 0.035 85)", "oklch(75% 0.035 85)", "oklch(87% 0.03 85)", "oklch(94% 0.025 85)"] },
+      "paper-rule": { "role": "neutral", "displayName": "Paper Rule", "canonical": "rgba(29, 26, 22, 0.14)", "tonalRamp": ["oklch(15% 0.015 85)", "oklch(27% 0.02 85)", "oklch(39% 0.025 85)", "oklch(51% 0.03 85)", "oklch(63% 0.035 85)", "oklch(75% 0.035 85)", "oklch(87% 0.03 85)", "oklch(94% 0.025 85)"] },
+      "paper-pressed": { "role": "neutral", "displayName": "Paper, Pressed", "canonical": "#e3dac6", "tonalRamp": ["oklch(15% 0.015 85)", "oklch(27% 0.02 85)", "oklch(39% 0.025 85)", "oklch(51% 0.03 85)", "oklch(63% 0.035 85)", "oklch(75% 0.035 85)", "oklch(87% 0.03 85)", "oklch(94% 0.025 85)"] },
+      "ink-paper": { "role": "neutral", "displayName": "Paper Ink", "canonical": "#1d1a16", "tonalRamp": ["oklch(15% 0.012 70)", "oklch(27% 0.014 70)", "oklch(39% 0.016 70)", "oklch(51% 0.018 70)", "oklch(63% 0.02 70)", "oklch(75% 0.02 70)", "oklch(87% 0.018 70)", "oklch(95% 0.012 70)"] },
+      "ink-paper-dim": { "role": "neutral", "displayName": "Paper Ink, Dim", "canonical": "#6b6258", "tonalRamp": ["oklch(15% 0.012 70)", "oklch(27% 0.014 70)", "oklch(39% 0.016 70)", "oklch(51% 0.018 70)", "oklch(63% 0.02 70)", "oklch(75% 0.02 70)", "oklch(87% 0.018 70)", "oklch(95% 0.012 70)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Band Top Line", "purpose": "The playing cue, Caveat 600 at 33cqh in white, stretched with scaleX (1x to 2.4x) to its 5 s duration." },
+      "headline": { "displayName": "Band Runner Lines", "purpose": "Three runner-up cues at 11.5cqh in family ink at 72% opacity." },
+      "hand-note": { "displayName": "Band Note", "purpose": "Status written on the band in Caveat 400; shrinks to clamp(16px, 1.6vw, 22px) at bottom-left while a take plays." },
+      "title": { "displayName": "Sheet Title", "purpose": "The detection sheet heading." },
+      "timecode": { "displayName": "Timecode", "purpose": "The deck's mm:ss.d readout, bold tabular numerals." },
+      "body": { "displayName": "Body", "purpose": "Base UI text on the stage; the picture note uses clamp(16px, 2vw, 22px)." },
+      "body-sheet": { "displayName": "Sheet Body", "purpose": "All sheet text on a 28px line so it sits on the paper's rules; italic for the query line." },
+      "label": { "displayName": "Deck Label", "purpose": "Mic and loop labels in dim bone text with tabular numerals." }
+    },
+    "shadows": [
+      { "name": "projector-lift", "value": "0 24px 70px -20px rgba(0, 0, 0, 0.85), 0 6px 18px -8px rgba(0, 0, 0, 0.7)", "purpose": "The projected picture at rest." },
+      { "name": "recording-ring", "value": "0 0 0 3px var(--bar), 0 24px 70px -20px rgba(0, 0, 0, 0.85)", "purpose": "The live picture while recording." },
+      { "name": "sheet-edge", "value": "-18px 0 50px -16px rgba(0, 0, 0, 0.8)", "purpose": "The open detection sheet over the stage." },
+      { "name": "bar-flash", "value": "0 0 0 2px var(--bar), 0 0 28px 8px rgba(255, 90, 54, 0.75)", "purpose": "Keyframe start of the 0.5s bar flash when a sound starts or changes." },
+      { "name": "lamp-glow", "value": "0 0 10px 2px rgba(255, 90, 54, 0.8)", "purpose": "The mic lamp while recording or blinking in countdown." },
+      { "name": "lamp-rest", "value": "inset 0 0 0 1px #5a3a35", "purpose": "The unlit lamp's ring over its #3a2a27 disc." },
+      { "name": "light-spill", "value": "radial-gradient(50% 50% at 50% 50%, rgba(255, 196, 130, 0.16), rgba(255, 196, 130, 0) 100%) with filter: blur(48px)", "purpose": "The projector's amber spill behind the picture (a pseudo-element, not a box-shadow)." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The single spatial easing: cue reveal, line swap, sheet slide, mic lift." },
+      { "name": "cue-reveal", "value": "clip-path 0.7s var(--ease-out), delay = line * 90ms + repeat * 140ms", "purpose": "Lettering written left to right across the band." },
+      { "name": "line-swap", "value": "top, height, font-size 0.45s var(--ease-out); opacity 0.3s ease", "purpose": "A runner-up promoted to the top line." },
+      { "name": "sheet-slide", "value": "transform 0.38s var(--ease-out) from translateX(104%)", "purpose": "The detection sheet opening." },
+      { "name": "picture-crossfade", "value": "opacity 0.35s ease", "purpose": "Live preview to recorded take." },
+      { "name": "mic-lift", "value": "transform 0.2s var(--ease-out), background 0.2s ease; hover translateY(-1px), active translateY(1px)", "purpose": "The mic's hover and press." },
+      { "name": "bar-flash", "value": "barflash 0.5s ease-out", "purpose": "Confirmation that a sound started or changed at the bar." },
+      { "name": "lamp-blink", "value": "blink 1s steps(2, start) infinite", "purpose": "Countdown before recording." },
+      { "name": "reveal-rewind", "value": "750ms easeOutExpo tween of the strip to 1.2 s before the take, with filter: blur(3px) on the strip", "purpose": "The scripted whip back before the first detection of a take (JS, app.js)." },
+      { "name": "reveal-preroll", "value": "650ms hold, then 1.2 s linear tween into the bar", "purpose": "The winner travels to the bar; the sound starts as it arrives (JS, app.js)." },
+      { "name": "strip-clock", "value": "translate3d(-bandT * PPS px, 0, 0) each frame; PPS = max(90, bandWidth / 8.5)", "purpose": "The band moves only with the take's currentTime." },
+      { "name": "reduced-motion", "value": "transition: none on .line, .cue, .sheet, .pic, .mic; animation: none on .bar.flash and .lamp; no whip blur; rewind and pre-roll skipped in JS", "purpose": "prefers-reduced-motion: reduce keeps the reveal without the travel." }
+    ],
+    "breakpoints": [
+      { "name": "small", "value": "720px", "purpose": "max-width: picture row sized to width, band 200px, deck 92px, loop label hidden." }
+    ],
+    "materials": [
+      { "name": "band-grain", "value": "tiled 220px SVG feTurbulence (baseFrequency 0.85, 2 octaves) tinted rgb(245, 237, 224) at 5.5% alpha over var(--strip)", "purpose": "The band's paper-film grain." },
+      { "name": "sprocket-row", "value": "radial-gradient(ellipse 11px 8px at 50% 50%, var(--strip-hole) 60%, transparent 62%) 0 0 / 24px 16px repeat-x, 16px tall, top and bottom", "purpose": "Perforations cut into the band." },
+      { "name": "ruled-paper", "value": "linear-gradient(90deg, transparent 44px, rgba(232, 80, 63, 0.55) 44px 45px, transparent 45px), repeating-linear-gradient(180deg, transparent 0 27px, var(--paper-rule) 27px 28px), var(--paper)", "purpose": "The detection sheet's surface: a red margin line and 28px rules." },
+      { "name": "stage-vignette", "value": "radial-gradient(120% 90% at 50% 38%, #171513 0%, var(--ground) 55%, var(--ground-deep) 100%)", "purpose": "The auditorium ground behind the picture." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Transport",
+      "kind": "button",
+      "refersTo": "transport",
+      "description": "Play/pause for the current take: an outlined 44px circle on the deck, icon in currentColor.",
+      "html": "<button class=\"ds-transport\" type=\"button\" aria-label=\"Pause\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 4.5h4v15H6zM14 4.5h4v15h-4z\"/></svg></button>",
+      "css": ".ds-transport { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; border: 1px solid #2f2f33; background: none; color: var(--text, #f4efe6); padding: 0; cursor: pointer; } .ds-transport svg { width: 20px; height: 20px; fill: currentColor; display: block; } .ds-transport:disabled { opacity: 0.35; cursor: default; } .ds-transport:focus-visible { outline: 3px solid var(--bar, #ff5a36); outline-offset: 3px; }"
+    },
+    {
+      "name": "Mic",
+      "kind": "button",
+      "refersTo": "mic",
+      "description": "The primary action: a drawn stage mic with a red lamp, centred under the sync bar.",
+      "html": "<button class=\"ds-mic\" type=\"button\" aria-label=\"Record ten seconds\"><span class=\"ds-lamp\" aria-hidden=\"true\"></span><svg class=\"ds-mic-glyph\" viewBox=\"0 0 48 84\" aria-hidden=\"true\"><rect x=\"14\" y=\"4\" width=\"20\" height=\"40\" rx=\"10\"/><path class=\"ds-grille\" d=\"M18 14h12M18 20h12M18 26h12M18 32h12\"/><path class=\"ds-arc\" d=\"M8 34v4a16 16 0 0 0 32 0v-4\"/><path class=\"ds-stem\" d=\"M24 54v18M14 72h20\"/></svg><span class=\"ds-mic-label\">Record 10 s</span></button>",
+      "css": ".ds-mic { position: relative; display: grid; justify-items: center; gap: 4px; padding: 6px 18px 4px; border: 0; border-radius: 14px; background: none; color: var(--text, #f4efe6); font-family: Atkinson, system-ui, sans-serif; cursor: pointer; transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease; } .ds-mic:hover { background: rgba(244, 239, 230, 0.06); transform: translateY(-1px); } .ds-mic:active { transform: translateY(1px); } .ds-mic:focus-visible { outline: 3px solid var(--bar, #ff5a36); outline-offset: 3px; } .ds-mic-glyph { height: 62px; width: auto; display: block; } .ds-mic-glyph rect { fill: #35343a; stroke: #6b6a72; stroke-width: 1.5; } .ds-mic-glyph .ds-grille { stroke: #9a98a2; stroke-width: 1.5; stroke-linecap: round; } .ds-mic-glyph .ds-arc, .ds-mic-glyph .ds-stem { fill: none; stroke: #9a98a2; stroke-width: 2; stroke-linecap: round; } .ds-mic-label { font-size: 15px; color: var(--text-dim, #a69f92); font-variant-numeric: tabular-nums; } .ds-lamp { position: absolute; top: 1px; left: 50%; margin-left: -5px; width: 10px; height: 10px; border-radius: 50%; background: #3a2a27; box-shadow: inset 0 0 0 1px #5a3a35; } .ds-mic[data-state=\"recording\"] .ds-lamp { background: var(--bar, #ff5a36); box-shadow: 0 0 10px 2px rgba(255, 90, 54, 0.8); }"
+    },
+    {
+      "name": "Sheet Tab",
+      "kind": "nav",
+      "refersTo": "sheet-tab",
+      "description": "Opens the detection sheet: an outlined pill with a stroked line icon, brightening on hover and while expanded.",
+      "html": "<button class=\"ds-sheet-tab\" type=\"button\" aria-expanded=\"false\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 3h14v18H5zM8 8h8M8 12h8M8 16h5\"/></svg><span>Sheet</span></button>",
+      "css": ".ds-sheet-tab { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid #2f2f33; border-radius: 8px; background: none; color: var(--text-dim, #a69f92); font: 16px/1.4 Atkinson, system-ui, sans-serif; cursor: pointer; transition: color 0.2s ease, border-color 0.2s ease; } .ds-sheet-tab:hover, .ds-sheet-tab[aria-expanded=\"true\"] { color: var(--text, #f4efe6); border-color: #55545b; } .ds-sheet-tab:focus-visible { outline: 3px solid var(--bar, #ff5a36); outline-offset: 3px; } .ds-sheet-tab svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; display: block; }"
+    },
+    {
+      "name": "Sheet Button",
+      "kind": "button",
+      "refersTo": "sheet-button",
+      "description": "Outlined paper button on the detection sheet (Detect again, Download the dub).",
+      "html": "<span style=\"display:inline-block;padding:12px;background:#efe8d8\"><button class=\"ds-sheet-btn\" type=\"button\">Detect again</button> <button class=\"ds-sheet-btn\" type=\"button\" disabled>Download the dub</button></span>",
+      "css": ".ds-sheet-btn { padding: 6px 12px; border: 1px solid var(--ink-paper, #1d1a16); border-radius: 6px; background: var(--paper, #efe8d8); color: var(--ink-paper, #1d1a16); font: 16px/1.4 Atkinson, system-ui, sans-serif; cursor: pointer; transition: background 0.15s ease; } .ds-sheet-btn:hover:not(:disabled) { background: #e3dac6; } .ds-sheet-btn:disabled { opacity: 0.4; cursor: default; } .ds-sheet-btn:focus-visible { outline: 3px solid var(--ink-paper, #1d1a16); outline-offset: 3px; }"
+    },
+    {
+      "name": "Sheet Options",
+      "kind": "input",
+      "refersTo": "sheet",
+      "description": "Native radios, checkbox and range on the sheet, accent-coloured with the sync bar, set on the 28px rule.",
+      "html": "<form class=\"ds-opts\"><fieldset><legend>Score against</legend><label><input type=\"radio\" name=\"m\" checked> blend</label><label><input type=\"radio\" name=\"m\"> library audio</label><label><input type=\"radio\" name=\"m\"> captions</label></fieldset><label class=\"ds-range\"><span>Blend</span><input type=\"range\" min=\"0\" max=\"1\" step=\"0.05\" value=\"0.5\"><output>50% audio</output></label><label><input type=\"checkbox\"> Keep my audio under the sound</label></form>",
+      "css": ".ds-opts { display: grid; gap: 8px; padding: 12px 24px 12px 56px; background: linear-gradient(90deg, transparent 44px, rgba(232, 80, 63, 0.55) 44px, rgba(232, 80, 63, 0.55) 45px, transparent 45px), repeating-linear-gradient(180deg, transparent 0 27px, rgba(29, 26, 22, 0.14) 27px 28px), var(--paper, #efe8d8); color: var(--ink-paper, #1d1a16); font: 16px/28px Atkinson, system-ui, sans-serif; } .ds-opts fieldset { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; } .ds-opts legend { float: left; width: 100%; padding: 0; font-weight: 700; } .ds-opts label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; } .ds-opts input[type=\"radio\"], .ds-opts input[type=\"checkbox\"] { accent-color: var(--bar, #ff5a36); width: 16px; height: 16px; margin: 0; } .ds-range span { font-weight: 700; margin-right: 10px; } .ds-range input { width: 140px; vertical-align: middle; accent-color: var(--bar, #ff5a36); } .ds-range output { margin-left: 10px; color: var(--ink-paper-dim, #6b6258); font-variant-numeric: tabular-nums; } .ds-opts :focus-visible { outline: 3px solid var(--ink-paper, #1d1a16); outline-offset: 3px; }"
+    },
+    {
+      "name": "Class Row",
+      "kind": "chip",
+      "refersTo": "sheet",
+      "description": "A row of the sheet's class table: rank, family dot, name, z and both path scores in tabular numerals; the playing row bold.",
+      "html": "<table class=\"ds-classes\"><thead><tr><th>#</th><th>Sound</th><th>z</th><th>visual</th><th>audio</th></tr></thead><tbody><tr class=\"ds-on\" data-family=\"human\"><td>1</td><td><span class=\"ds-dot\"></span>breathing</td><td class=\"ds-b\">1.87</td><td>0.643</td><td>0.676</td></tr><tr data-family=\"home\"><td>4</td><td><span class=\"ds-dot\"></span>mouse click</td><td class=\"ds-b\">1.39</td><td>0.606</td><td>0.699</td></tr><tr data-family=\"city\"><td>5</td><td><span class=\"ds-dot\"></span>airplane</td><td>1.35</td><td>0.611</td><td>0.693</td></tr></tbody></table>",
+      "css": ".ds-classes { width: 100%; border-collapse: collapse; font: 16px/28px Atkinson, system-ui, sans-serif; font-variant-numeric: tabular-nums; color: var(--ink-paper, #1d1a16); background: var(--paper, #efe8d8); } .ds-classes th { text-align: left; font-weight: 700; } .ds-classes th:not(:nth-child(2)), .ds-classes td:not(:nth-child(2)) { text-align: right; width: 52px; } .ds-classes td { padding: 0 0 0 6px; } .ds-classes td:first-child { padding-left: 0; } .ds-classes tbody tr { cursor: pointer; } .ds-classes tbody tr:hover td { background: rgba(29, 26, 22, 0.06); } .ds-classes tr.ds-on td:nth-child(2), .ds-classes td.ds-b { font-weight: 700; } .ds-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: -1px; background: var(--ink); } .ds-classes tr[data-family=\"animals\"] { --ink: var(--ink-animals, #e8503f); } .ds-classes tr[data-family=\"nature\"] { --ink: var(--ink-nature, #52c472); } .ds-classes tr[data-family=\"human\"] { --ink: var(--ink-human, #f4c743); } .ds-classes tr[data-family=\"home\"] { --ink: var(--ink-home, #4b97f5); } .ds-classes tr[data-family=\"city\"] { --ink: var(--ink-city, #ba8cf3); }"
+    },
+    {
+      "name": "Picture Note",
+      "kind": "card",
+      "refersTo": "picture-note",
+      "description": "The only card-like surface: a translucent message over the picture when the camera is unavailable.",
+      "html": "<p class=\"ds-picture-note\">Camera not available. Allow the camera in Safari and reload.</p>",
+      "css": ".ds-picture-note { margin: 0; max-width: 34ch; text-align: center; font: 20px/1.4 Atkinson, system-ui, sans-serif; color: var(--text, #f4efe6); padding: 20px 28px; background: rgba(10, 10, 11, 0.7); border: 1px solid #2a2a2e; border-radius: 3px; }"
+    },
+    {
+      "name": "Dubbing Band",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "The signature: grained charcoal strip with sprocket rows, a fixed red sync bar, a white top-line cue and family-inked runners in Caveat, stretched to duration.",
+      "html": "<div class=\"ds-band\"><div class=\"ds-strip\"><div class=\"ds-take-mark\"><span>Loop 1</span></div><div class=\"ds-line ds-l0\"><span class=\"ds-cue\"><span class=\"ds-cue-text\">clock tick</span></span></div><div class=\"ds-line ds-l1\" data-family=\"home\"><span class=\"ds-cue\"><span class=\"ds-cue-text\">clock alarm</span></span></div><div class=\"ds-line ds-l2\" data-family=\"city\"><span class=\"ds-cue\"><span class=\"ds-cue-text\">car horn</span></span></div><div class=\"ds-line ds-l3\" data-family=\"home\"><span class=\"ds-cue\"><span class=\"ds-cue-text\">door wood creaks</span></span></div></div><div class=\"ds-bar\"></div></div>",
+      "css": ".ds-band { position: relative; height: 200px; overflow: hidden; container-type: size; padding: 16px 0; background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.96 0 0 0 0 0.93 0 0 0 0 0.88 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E\") repeat, var(--strip, #1d1c19); border-top: 1px solid var(--strip-edge, #2b2a26); border-bottom: 1px solid var(--strip-edge, #2b2a26); } .ds-band::before, .ds-band::after { content: \"\"; position: absolute; left: 0; right: 0; height: 16px; background: radial-gradient(ellipse 11px 8px at 50% 50%, var(--strip-hole, #0b0b0a) 60%, transparent 62%) 0 0 / 24px 16px repeat-x; pointer-events: none; z-index: 1; } .ds-band::before { top: 0; } .ds-band::after { bottom: 0; } .ds-strip { position: absolute; top: 0; bottom: 0; left: 20%; right: 0; } .ds-take-mark { position: absolute; top: 16px; bottom: 16px; left: 0; width: 0; border-left: 1px dashed rgba(244, 239, 230, 0.35); } .ds-take-mark span { position: absolute; left: 8px; top: 2px; font: 16px Caveat, 'Bradley Hand', cursive; color: var(--text-dim, #a69f92); white-space: nowrap; } .ds-line { position: absolute; left: 24px; right: 0; color: var(--ink); } .ds-line[data-family=\"animals\"] { --ink: var(--ink-animals, #e8503f); } .ds-line[data-family=\"nature\"] { --ink: var(--ink-nature, #52c472); } .ds-line[data-family=\"human\"] { --ink: var(--ink-human, #f4c743); } .ds-line[data-family=\"home\"] { --ink: var(--ink-home, #4b97f5); } .ds-line[data-family=\"city\"] { --ink: var(--ink-city, #ba8cf3); } .ds-l0 { top: 9%; height: 44%; font-size: 33cqh; color: #ffffff; } .ds-l1 { top: 55%; height: 13%; font-size: 11.5cqh; opacity: 0.72; } .ds-l2 { top: 68%; height: 13%; font-size: 11.5cqh; opacity: 0.72; } .ds-l3 { top: 81%; height: 12%; font-size: 11.5cqh; opacity: 0.72; } .ds-line:not(.ds-l0):hover { opacity: 1; } .ds-cue { position: absolute; top: 0; height: 100%; left: 0; right: 18px; display: flex; align-items: center; font-family: Caveat, 'Bradley Hand', cursive; font-weight: 600; line-height: 1; white-space: nowrap; } .ds-cue::before { content: \"\"; position: absolute; left: var(--text-end, 60%); right: 0; top: 50%; height: 0; border-top: 1px solid currentColor; opacity: 0.35; } .ds-cue::after { content: \"\"; position: absolute; right: 0; top: 18%; height: 64%; width: 0; border-right: 1px solid currentColor; opacity: 0.4; } .ds-cue-text { display: inline-block; transform-origin: 0 50%; letter-spacing: 0.02em; transform: scaleX(1.8); } .ds-bar { position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; margin-left: -1.5px; background: var(--bar, #ff5a36); z-index: 2; } .ds-bar::before, .ds-bar::after { content: \"\"; position: absolute; left: 50%; margin-left: -7px; border-left: 7px solid transparent; border-right: 7px solid transparent; } .ds-bar::before { top: 0; border-top: 9px solid var(--bar, #ff5a36); } .ds-bar::after { bottom: 0; border-bottom: 9px solid var(--bar, #ff5a36); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dubbing Band",
+    "overview": "A darkened dubbing auditorium. The screen is three stacked stage objects: a projected picture floating in a warm near-black room with a soft amber light spill behind it, a charcoal rythmo band with sprocket holes scrolling underneath it, and a hardware deck along the bottom. Nothing on screen is a web control dressed up; the mic is a drawn stage mic with a red lamp, the counter is a timecode readout, the inspector is a sheet of ruled paper that slides in from the right.\n\nThe band is the whole idea. Time runs horizontally at a fixed pixel rate; the matched sound arrives as marker lettering in Caveat, stretched to its real five-second duration, and the sound starts the instant the first letter crosses the one red-orange sync bar fixed at the band's centre. Density is low by design: the room watches from several metres, so there is one large line, three smaller lines, a bar, and a deck, and nothing else.\n\nMotion belongs to the video clock. The band moves only when the take plays (plus one scripted rewind-and-write before each reveal); every other element is still, and state is shown by ink, lamp, and bar flash rather than by things moving around.",
+    "keyCharacteristics": [
+      "Warm near-black ground, paler charcoal strip, cream paper sheet: three materials, no greys for their own sake.",
+      "One accent (red-orange bar) that only ever means \"sync\": the bar itself, the recording lamp, focus rings, form accent colour, the sheet's margin line.",
+      "Five family inks with fixed meanings; white reserved for the playing cue.",
+      "Two faces: Caveat for anything written on the band, Atkinson Hyperlegible with tabular numerals for everything the deck and sheet say.",
+      "Container-relative band type (`cqh`) so the lettering scales with the band, not the viewport.",
+      "Flat surfaces; depth comes from the picture's projector shadow, the sheet's edge shadow, and the band's cut sprocket holes."
+    ],
+    "rules": [
+      { "name": "The One Bar Rule", "body": "Red-orange means sync or recording and nothing else. Do not use `bar` for emphasis, links, headings or decoration; on the sheet it appears only as the form `accent-color` and the margin line.", "section": "colors" },
+      { "name": "The Fixed Ink Rule", "body": "A family ink is bound to its family in every surface (band lines, sheet dots) and never reassigned for hierarchy, mood or state.", "section": "colors" },
+      { "name": "The White Cue Rule", "body": "Pure white is the playing cue's ink alone. Nothing else on the stage is `#ffffff`.", "section": "colors" },
+      { "name": "The Band Is Caveat Rule", "body": "Caveat is for things written on the band. The deck, the picture note and the sheet are Atkinson only.", "section": "typography" },
+      { "name": "The Ruled Baseline Rule", "body": "On the sheet, every line of text is 28px tall so it sits on the paper's rules; do not introduce line-heights that break the rule pitch.", "section": "typography" },
+      { "name": "The Band Scales With Itself Rule", "body": "Band lettering is sized in `cqh` against the band container, never in `px`, `rem` or viewport units.", "section": "typography" },
+      { "name": "The Physical Shadow Rule", "body": "A shadow exists only where a stage object would cast one: the projected picture, the paper sheet, the lit lamp, the flashing bar. No hover shadows, no card shadows, no ambient glows on controls.", "section": "elevation" },
+      { "name": "The Flash At The Bar Rule", "body": "The bar flash is the feedback for a sound starting or changing. Do not add a second confirmation anywhere else.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do write anything that goes on the band in Caveat 600, sized in `cqh`, stretched to its duration with `scaleX` (max 2.4x) and finished with a rule to the cue's end.",
+      "Do keep the sync bar fixed at the band's horizontal centre and start or change sounds only there, with the bar flash as the confirmation.",
+      "Do bind colour to family through `data-family` and `--ink`, and render the playing cue in white.",
+      "Do set sheet text on the 28px rule pitch and use tabular numerals for every number on the deck and the sheet.",
+      "Do build controls as stage objects: outlined circles and rings on the deck, outlined paper buttons on the sheet, inline SVG drawn with `currentColor` or the mic's grey trio.",
+      "Do respect `prefers-reduced-motion` by removing travel and reveal animation while keeping the reveal itself (band in place, cues present, sound at the bar)."
+    ],
+    "donts": [
+      "Don't use `bar` for anything but sync, recording, focus and the sheet's form accent.",
+      "Don't reassign a family ink, use white for a runner-up, or tint the top line by family.",
+      "Don't move the strip with CSS transitions or on any clock other than the take's `currentTime` (plus the scripted rewind and pre-roll).",
+      "Don't put Caveat on the deck or the sheet, or Atkinson on the band.",
+      "Don't add shadows to controls, hover glows, or lifted cards; the only shadows are the picture's, the sheet's, the lamp's and the bar flash.",
+      "Don't size band type in `px`, `rem` or viewport units, or let the band row grow beyond its clamp."
+    ]
+  }
+}

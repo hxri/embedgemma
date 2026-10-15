@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eight words</title>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/atkinson-700-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/words/words.css">
+</head>
+<body>
+<main class="w">
+  <header class="head">
+    <h1>Eight words.</h1>
+    <p class="lede">Give EmbeddingGemma 2 a photo, a sound, a sentence, or all three. It turns them into one point: 768 numbers. This page writes that point back as up to eight ordinary words, chosen one at a time so that when the model reads the words, it lands on the same point.</p>
+  </header>
+
+  <section class="how" aria-label="Three simple examples">
+    <h2>Three simple examples. Click one to run it live.</h2>
+    <dl>
+      <div><button type="button" class="ex" data-text="a dog barking at the mailman"><dt>The sentence “a dog barking at the mailman” becomes</dt><dd>aggressively Canine shout mailbox courier</dd></button></div>
+      <div><button type="button" class="ex" data-text="rain falling on a tin roof at night"><dt>The sentence “rain falling on a tin roof at night” needs only four:</dt><dd>Rainfall nighttime roof Tin</dd></button></div>
+      <div><button type="button" class="ex" data-photo="airplane" data-sound="chirping_birds"><dt>A photo of an airplane, plus the sound of birds, becomes</dt><dd>profoundly airplane scattering bird Acoustics</dd></button></div>
+    </dl>
+    <p class="why">Nobody wrote these words. Each is a token from the model's own vocabulary of 262,144, picked because, read together, they land closest to the point, and kept only if dropping it would move the reading away. It is a lossy codec, like JPEG for meaning: eight words are 144 bits where the point is 12,288. Sentences come out clean; photos and sounds come out rougher, because the model's idea of a cow is not made of words. Either way, type the words into any search box that uses the model and the same results come back.</p>
+  </section>
+
+  <section class="bench" aria-label="Inputs">
+    <h2>Pick anything, or several things at once</h2>
+    <div class="strip" id="photos" aria-label="Photos"></div>
+    <div class="row">
+      <div class="field">
+        <label for="sounds">A sound</label>
+        <div class="sound">
+          <select id="sounds"><option value="">none</option></select>
+          <button type="button" class="play" id="preview" aria-label="Play the sound"><svg class="p" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg><svg class="s" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg></button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="text">A sentence</label>
+        <input type="text" id="text" list="sentences" placeholder="type anything, or pick a suggestion" autocomplete="off">
+        <datalist id="sentences"></datalist>
+      </div>
+      <div class="field">
+        <label for="file">Or any file</label>
+        <div class="drop" id="drop">
+          <input type="file" id="file" accept="image/*,audio/*,video/*" hidden>
+          <button type="button" id="pick">Drop or choose</button>
+          <span class="name" id="fname"></span>
+          <button type="button" id="clear" hidden>remove</button>
+        </div>
+      </div>
+      <button type="button" class="go" id="go" disabled>Write the words</button>
+    </div>
+    <div class="opts">
+      <span class="seg" role="group" aria-label="How many words">
+        <button type="button" data-k="4" aria-pressed="false">4 words</button>
+        <button type="button" data-k="8" aria-pressed="true">8 words</button>
+        <button type="button" data-k="12" aria-pressed="false">12 words</button>
+      </span>
+      <label><input type="radio" name="lang" value="en" checked> English dictionary words</label>
+      <label><input type="radio" name="lang" value="any"> any token in any language</label>
+    </div>
+    <p class="status" id="status">Pick a photo, a sound, a sentence, or any mix, then write the words.</p>
+  </section>
+
+  <section class="code" aria-live="polite" aria-label="The words">
+    <p class="inputs" id="inputs"></p>
+    <ol id="words"></ol>
+    <p class="meter" id="meter"></p>
+  </section>
+
+  <section class="proof" id="proof" hidden aria-label="Proof">
+    <div>
+      <h3>What the original point finds</h3>
+      <p class="sub">Closest of 1000 videos, then closest of 2000 sounds.</p>
+      <ul class="items" id="orig"></ul>
+      <h3>Sounds</h3>
+      <ul class="items" id="origSounds"></ul>
+    </div>
+    <div>
+      <h3>What the words find</h3>
+      <p class="sub">The same search, started from the words alone. Blue means the same answer.</p>
+      <ul class="items" id="fromWords"></ul>
+      <h3>Sounds</h3>
+      <ul class="items" id="fromWordsSounds"></ul>
+      <div class="back">
+        <textarea id="back" aria-label="Words to read back"></textarea>
+        <button type="button" id="read">Read these back</button>
+      </div>
+      <p class="readout" id="readout"></p>
+    </div>
+  </section>
+</main>
+<script type="module" src="/words/words.js"></script>
+</body>
+</html>

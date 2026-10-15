@@ -1,0 +1,22 @@
+"""Caption-style text for each ESC-50 class, phrased like a video description (what you would SEE)."""
+CAPTIONS = {
+    "dog": "a dog barking", "rooster": "a rooster crowing", "pig": "a pig grunting and oinking",
+    "cow": "a cow mooing", "frog": "a frog croaking", "cat": "a cat meowing", "hen": "a hen clucking",
+    "insects": "insects buzzing around", "sheep": "a sheep bleating", "crow": "a crow cawing",
+    "rain": "rain falling", "sea_waves": "waves crashing on the beach", "crackling_fire": "a fire crackling",
+    "crickets": "crickets chirping at night", "chirping_birds": "birds chirping", "water_drops": "water dripping",
+    "wind": "wind blowing", "pouring_water": "a person pouring water into a glass", "toilet_flush": "a toilet flushing",
+    "thunderstorm": "a thunderstorm with lightning", "crying_baby": "a baby crying", "sneezing": "a person sneezing",
+    "clapping": "a person clapping their hands", "breathing": "a person breathing heavily",
+    "coughing": "a person coughing", "footsteps": "a person walking, footsteps", "laughing": "a person laughing",
+    "brushing_teeth": "a person brushing their teeth", "snoring": "a person sleeping and snoring",
+    "drinking_sipping": "a person drinking from a cup", "door_wood_knock": "a person knocking on a wooden door",
+    "mouse_click": "a person clicking a computer mouse", "keyboard_typing": "a person typing on a keyboard",
+    "door_wood_creaks": "a wooden door creaking open", "can_opening": "a person opening a soda can",
+    "washing_machine": "a washing machine running", "vacuum_cleaner": "a person vacuuming the floor",
+    "clock_alarm": "an alarm clock ringing", "clock_tick": "a clock ticking", "glass_breaking": "glass shattering",
+    "helicopter": "a helicopter flying", "chainsaw": "a person using a chainsaw", "siren": "an emergency siren",
+    "car_horn": "a car honking its horn", "engine": "a car engine running", "train": "a train passing by",
+    "church_bells": "church bells ringing", "airplane": "an airplane flying overhead",
+    "fireworks": "fireworks exploding in the sky", "hand_saw": "a person sawing wood with a hand saw",
+}

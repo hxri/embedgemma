@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentence arithmetic</title>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/atkinson-700-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/directions/dir.css">
+</head>
+<body>
+<main class="d">
+  <header class="head">
+    <h1>Sentence arithmetic.</h1>
+    <p class="lede">Type a sentence. Each button adds one fixed direction to its embedding and nothing else: no word is edited. The proof is where the point lands. Among <span id="bankN">26,939</span> sentences, is the closest one now your sentence's own changed form?</p>
+    <nav class="view" aria-label="View">
+      <button type="button" data-view="try" aria-pressed="true">Try it</button>
+      <button type="button" data-view="how" aria-pressed="false">How it works</button>
+    </nav>
+  </header>
+
+  <section class="how" id="how" hidden aria-label="How it works">
+    <div class="steps">
+      <p class="stepn"><span id="stepN">1</span> of 8</p>
+      <h2 id="stepTitle"></h2>
+      <p id="stepText"></p>
+      <div class="stepctl">
+        <button type="button" id="back">Back</button>
+        <button type="button" id="next">Next</button>
+        <button type="button" id="play" aria-pressed="false">Play</button>
+      </div>
+      <ul class="legend" aria-label="Legend">
+        <li><i class="sw eg"></i>EmbeddingGemma 2, six times: the only model that makes or judges a vector</li>
+        <li><i class="sw dg"></i>DiffusionGemma 26B, once: proposes tokens inside the reading</li>
+        <li><i class="sw nl"></i>NLLB translator: writes the expected foreign form, text only</li>
+        <li><i class="sw pt"></i>a point: 768 numbers</li>
+      </ul>
+    </div>
+    <div class="chartwrap"><svg class="chart" id="chart" viewBox="0 0 960 600" role="img" aria-label="Flow chart of the pipeline"></svg></div>
+  </section>
+
+  <section class="bench" aria-label="Sentence and operations">
+    <input type="text" id="text" list="sugg" placeholder="a sentence with “is” or “are” and an -ing verb" autocomplete="off" spellcheck="false">
+    <datalist id="sugg"></datalist>
+    <div class="ops" id="ops" role="group" aria-label="Directions to add"></div>
+    <div class="row2">
+      <label class="field">Language <select id="lang"><option value="">keep English</option></select></label>
+      <label class="field push">Push <input type="range" id="strength" min="0" max="2" step="0.1" value="1"><output id="strengthOut">1.0×</output></label>
+      <span class="hint">1.0× is the fitted length of each direction. Slide to see the point leave your sentence and arrive at its changed form.</span>
+    </div>
+    <p class="eq" id="eq"></p>
+  </section>
+
+  <section class="verdict" id="verdict" aria-live="polite"><p class="status">Pick a sentence to start.</p></section>
+
+  <section class="cols" id="cols" hidden>
+    <div><h3>Closest sentences before</h3><ol class="near" id="before"></ol></div>
+    <div><h3>Closest sentences after</h3><ol class="near" id="after"></ol></div>
+  </section>
+
+  <section class="read" id="read" hidden>
+    <p class="words" id="words"></p>
+    <div class="decode">
+      <button type="button" id="decode">Write the sentence at this point</button>
+      <span id="decoded"></span>
+    </div>
+    <p class="fine">Writing uses DiffusionGemma guided toward the point, with the five closest bank sentences as hints. It takes about six seconds and follows the hints as much as the point, so treat it as a reading, not the proof.</p>
+  </section>
+</main>
+<script type="module" src="/directions/dir.js"></script>
+</body>
+</html>

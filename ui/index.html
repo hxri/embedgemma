@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rythmo</title>
+<meta name="description" content="Record ten seconds, and EmbeddingGemma 2 writes the nearest sound onto the band.">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/caveat-400-700-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/atkinson-400-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-state="boot">
+<main class="stage">
+
+  <section class="picture" id="picture" aria-label="Picture">
+    <video id="preview" class="pic live" autoplay muted playsinline></video>
+    <video id="take" class="pic take" loop playsinline preload="auto"></video>
+    <p class="picture-note" id="pictureNote" hidden></p>
+    <button class="pic-toggle" id="picToggle" type="button" aria-label="Pause the take" hidden></button>
+  </section>
+
+  <section class="band" id="band" aria-label="Dubbing band">
+    <div class="strip" id="strip"></div>
+    <div class="bar" id="bar" aria-hidden="true"></div>
+    <p class="band-note" id="bandNote" hidden></p>
+  </section>
+
+  <footer class="deck">
+    <div class="deck-left">
+      <button class="transport" id="transport" type="button" aria-label="Pause" disabled>
+        <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+        <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h4v15H6zM14 4.5h4v15h-4z"/></svg>
+      </button>
+      <div class="counter">
+        <span class="loop" id="loopLabel">No take yet</span>
+        <span class="tc" id="tc">00:00.0</span>
+      </div>
+    </div>
+
+    <button class="mic" id="mic" type="button" aria-label="Record ten seconds">
+      <span class="lamp" aria-hidden="true"></span>
+      <svg class="mic-glyph" viewBox="0 0 48 84" aria-hidden="true">
+        <rect x="14" y="4" width="20" height="40" rx="10"/>
+        <path class="grille" d="M18 14h12M18 20h12M18 26h12M18 32h12"/>
+        <path class="arc" d="M8 34v4a16 16 0 0 0 32 0v-4"/>
+        <path class="stem" d="M24 54v18M14 72h20"/>
+      </svg>
+      <span class="mic-label" id="micLabel">Record 10 s</span>
+    </button>
+
+    <div class="deck-right">
+      <button class="sheet-tab" id="sheetTab" type="button" aria-expanded="false" aria-controls="sheet">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"/></svg>
+        <span>Sheet</span>
+      </button>
+    </div>
+  </footer>
+
+  <aside class="sheet" id="sheet" aria-label="Detection sheet" hidden>
+    <header class="sheet-head">
+      <h2>Detection sheet</h2>
+      <span class="sheet-loop" id="sheetLoop"></span>
+      <button class="sheet-close" id="sheetClose" type="button" aria-label="Close the sheet">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+
+    <p class="query-line" id="queryLine">No take yet. Press the mic to record ten seconds.</p>
+
+    <form class="opts" id="opts">
+      <fieldset>
+        <legend>Detect from</legend>
+        <label><input type="radio" name="query" value="both" checked> frames and audio</label>
+        <label><input type="radio" name="query" value="video"> frames only</label>
+        <label><input type="radio" name="query" value="audio"> audio only</label>
+      </fieldset>
+      <fieldset>
+        <legend>Score against</legend>
+        <label><input type="radio" name="mode" value="both" checked> blend</label>
+        <label><input type="radio" name="mode" value="audio"> library audio</label>
+        <label><input type="radio" name="mode" value="text"> captions</label>
+      </fieldset>
+      <label class="range"><span>Blend</span><input type="range" id="alpha" name="alpha" min="0" max="1" step="0.05" value="0.5"><output id="alphaOut">50% audio</output></label>
+      <label class="check"><input type="checkbox" id="keepAudio"> Keep my audio under the sound</label>
+      <div class="opts-actions">
+        <button type="button" id="redetect" disabled>Detect again</button>
+        <button type="button" id="download" disabled>Download the dub</button>
+      </div>
+    </form>
+
+    <table class="classes">
+      <thead><tr><th>#</th><th>Sound</th><th>z</th><th>visual</th><th>audio</th></tr></thead>
+      <tbody id="classRows"></tbody>
+    </table>
+    <p class="timings" id="timings"></p>
+  </aside>
+
+</main>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

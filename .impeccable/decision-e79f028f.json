@@ -1,0 +1,149 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned The Dubbing Band. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Dubbing Band",
+      "kicker": "THE ROLL",
+      "lineage": "French-style dubbing stages: the rythmo band of hand-lettered cues scrolling under the projected picture, read against a fixed sync bar",
+      "thesis": "The matched sound arrives hand-written on a band that slides under your video and starts the instant its first letter crosses the sync bar.",
+      "palette": ["#121214", "#f4efe6", "#ff5a36", "#3f8ff2", "#f2c23e", "#4fbf6b"],
+      "materials": ["marker lettering stretched to real durations on a scrolling strip", "projector light in a darkened auditorium", "one fixed red sync bar"],
+      "viewport": "The video fills the top two-thirds like the projected picture. Beneath it the band runs edge to edge with the red sync bar fixed at centre; the stage mic (record) sits at the bar. Before a take the band is blank. After a match the winner is written across the top line in white, stretched over the whole 10 s loop, runners-up on the lines below in their family ink; the band rolls with the video clock and the sound starts as the first letter crosses the bar. The detection sheet (scores, both paths, query mode) slides in from the right on request.",
+      "risk": "Hand lettering set small or static turns into a novelty font. The band must genuinely scroll with the video clock and letters must stretch to real durations, or the world collapses into a dark page with a strip.",
+      "raised": [
+        {"from": "challenger-earth-tower", "raise": "Every take stays on the strip: earlier loops remain to the left, scrollable, a visible record of the session."},
+        {"from": "challenger-cloud-quarry", "raise": "One active edge: the sync bar is the only place anything happens. The countdown lands there, the sound starts there, a swap takes effect there."},
+        {"from": "challenger-crt-arcade", "raise": "Palette law: pure white ink belongs to the playing cue alone; every other cue is written in its family ink at half strength."},
+        {"from": "challenger-football-kit", "raise": "Ink never changes meaning: each of the five sound families keeps its ink on the band, on the sheet, and in the inspector."}
+      ],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "projected picture (video)", "x": 0, "y": 0, "w": 12, "h": 6},
+        {"label": "band + sync bar", "x": 0, "y": 6, "w": 12, "h": 2, "accent": true},
+        {"label": "loop / timecode", "x": 0, "y": 8, "w": 4, "h": 2},
+        {"label": "mic (record)", "x": 5, "y": 8, "w": 2, "h": 2, "accent": true},
+        {"label": "sheet tab", "x": 11, "y": 0, "w": 1, "h": 6}
+      ]}
+    },
+    {
+      "id": "model-pick",
+      "label": "The Foley Stage",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Foley stages: a studio floor where effects are performed live to picture",
+      "thesis": "A sound stage where the picture plays on the wall and the matching prop lights up on the pegboard.",
+      "palette": ["#1a1917", "#c9a06a", "#efe9dd", "#d8412f", "#f1e9d2"],
+      "materials": ["plywood and pegboard", "cue sheets on a clipboard", "gaffer-tape labels"],
+      "viewport": "A projection screen on the stage wall carries the video; below it a pegboard of fifty props, one per sound class; the matching prop lights up and the cue sheet on the right fills in with the take.",
+      "risk": "Also where most runs in this category land: a studio or control-room look is the familiar answer. Fifty props is a real illustration job.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "screen on the wall (video)", "x": 1, "y": 0, "w": 7, "h": 5},
+        {"label": "cue sheet", "x": 8, "y": 0, "w": 4, "h": 10},
+        {"label": "prop pegboard (50)", "x": 0, "y": 5, "w": 8, "h": 5, "accent": true}
+      ]}
+    },
+    {
+      "id": "challenger-drum-machine",
+      "label": "Rhythm Machine Step Row",
+      "verdict": "competitive",
+      "lineage": "early-80s drum machines",
+      "thesis": "Your clip is a pattern: candidate sounds sit on sixteen candy keys and the chase light plays the winner.",
+      "palette": ["#2a2a2d", "#e23b2e", "#f07f2a", "#f5c531", "#f3f1ea"],
+      "materials": ["silkscreened charcoal panel", "lit LED keys"],
+      "viewport": "Charcoal panel, the video in a small screen at top left, a red segmented tempo readout, the unbroken sixteen-step row across the bottom.",
+      "case": "Holds audience identification: a room of sound-minded people reads a step row instantly. Loses clarity: the demo is not a sequencer, and the picture shrinks to a panel screen. Discipline worth keeping: motion locked to the clock, the light always says where now is.",
+      "risk": "Reads as a toy sequencer and the video becomes secondary to the panel.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-drum-machine-step-row-hero.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "video screen", "x": 0, "y": 0, "w": 5, "h": 5},
+        {"label": "tempo readout", "x": 8, "y": 0, "w": 4, "h": 2},
+        {"label": "16-step row", "x": 0, "y": 7, "w": 12, "h": 3, "accent": true}
+      ]}
+    },
+    {
+      "id": "challenger-cdrom-console",
+      "label": "Rendered CD-ROM Console",
+      "verdict": "competitive",
+      "lineage": "mid-nineties multimedia CD-ROM interfaces",
+      "thesis": "The whole screen is a rendered machine; the video plays in a postcard window and every control visibly depresses.",
+      "palette": ["#8f949c", "#2aa6a0", "#6a4fc9", "#d9dde2", "#101214"],
+      "materials": ["brushed rendered panels", "bevelled embossed toggles"],
+      "viewport": "A fixed console of bevelled panels around a small central video window, icon toggles ranged around it, no free text anywhere.",
+      "case": "Holds audience identification through nostalgia. Loses clarity: a postcard-sized video is the opposite of a room-scale reveal. Discipline worth keeping: every control is a physical object with travel.",
+      "risk": "The small window fights the projected room; bevels age fast.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-cdrom-chrome-navigation-hero.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "console panels", "x": 0, "y": 0, "w": 12, "h": 10},
+        {"label": "video window", "x": 4, "y": 3, "w": 4, "h": 4, "accent": true}
+      ]}
+    },
+    {
+      "id": "challenger-earth-tower",
+      "label": "Coiled Earth Tower",
+      "verdict": "declined",
+      "lineage": "hand-coiled monumental ceramics",
+      "thesis": "Takes stack upward as coils of a clay tower.",
+      "palette": ["#b5552f", "#6b3a22", "#efe4d1"],
+      "materials": ["raw clay coils", "slip-white seams"],
+      "viewport": "A tall banded tower, each course one take, the video on the wet course in progress.",
+      "case": "Fuses poorly: a video-to-sound demo has no reason to be a clay tower, and a room cannot read coils as sounds.",
+      "kept": "Every take stays visible as a course on the strip.",
+      "risk": "Pure metaphor with nothing for the ear.",
+      "hero": "https://impeccable.style/worlds/cards/clay-ceramics-fracture-coiled-earth-tower-hero.webp"
+    },
+    {
+      "id": "challenger-cloud-quarry",
+      "label": "Cloud Quarry",
+      "verdict": "declined",
+      "lineage": "surreal impossible-industry worlds",
+      "thesis": "Clips as blocks of cut weather.",
+      "palette": ["#f4f6f8", "#4f8fd9", "#6b7280", "#c0c7cf"],
+      "materials": ["cut cloud blocks", "one silver saw line"],
+      "viewport": "Stacked white blocks with blue voids between, the video on a cut face.",
+      "case": "Fuses poorly: surreal architecture hides a one-line mechanism.",
+      "kept": "One active edge where everything happens.",
+      "risk": "Whimsy without clarity.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry-hero.webp"
+    },
+    {
+      "id": "challenger-crt-arcade",
+      "label": "CRT Arcade Screen",
+      "verdict": "declined",
+      "lineage": "pixel-art arcade cabinets",
+      "thesis": "The demo as a 240-line arcade playfield.",
+      "palette": ["#000000", "#ff2d55", "#19e36b", "#ffd84d", "#4ab7ff"],
+      "materials": ["phosphor pixels", "scanlines"],
+      "viewport": "A tile-grid playfield with the webcam video pixelated inside it.",
+      "case": "Fun for the room, but pixelating a live webcam destroys the very thing the model is looking at.",
+      "kept": "A palette law: the brightest ink is reserved for the winner.",
+      "risk": "Costume.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-crt-arcade-pixel-glow-hero.webp"
+    },
+    {
+      "id": "challenger-football-kit",
+      "label": "Football Kit Wall",
+      "verdict": "declined",
+      "lineage": "club kit design",
+      "thesis": "Sounds as players on a kit wall.",
+      "palette": ["#c8102e", "#ffffff", "#0b1f3a", "#c9a227"],
+      "materials": ["polyester weave", "gold embroidery"],
+      "viewport": "A kit on a hanger with the video on the chest and the sound's number on the back.",
+      "case": "No identification for a demo crowd and no clarity for the mechanism.",
+      "kept": "Ink keeps its meaning across every surface.",
+      "risk": "Arbitrary.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-football-kit-crest-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The AI demo page: dark panel, big record button, video preview, result cards with score bars.",
+    "palette": ["#0f1115", "#1f2937", "#22d3ee", "#f9fafb"],
+    "materials": ["glass cards", "one neon accent"],
+    "viewport": "A centred record button over a video preview, results as a list of cards with progress bars, a settings drawer.",
+    "risk": "Indistinguishable from every other model demo, by design."
+  },
+  "steer": true
+}

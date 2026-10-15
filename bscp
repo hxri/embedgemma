@@ -1,0 +1,8 @@
+#!/bin/bash
+# scp to/from big-machine over the Tailscale SOCKS proxy. Use host alias "bm" e.g.:  bscp file.mp4 bm:~/research/embedgemma/
+args=()
+for a in "$@"; do args+=("${a/#bm:/hari@100.103.33.60:}"); done
+exec scp -i ~/.terdiff-remote/id_terdiff \
+  -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+  -o BatchMode=yes -o ConnectTimeout=20 \
+  -o "ProxyCommand=nc -X 5 -x 127.0.0.1:1055 %h %p" "${args[@]}"

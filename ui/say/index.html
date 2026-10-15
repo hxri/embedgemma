@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Say what you want to see</title>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/atkinson-700-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/say/say.css">
+</head>
+<body data-state="idle">
+<main class="say">
+  <header class="head">
+    <h1>Say what you want to see.</h1>
+    <p>Speak in any language. Your voice is embedded straight into the same space as the videos. Nothing is transcribed.</p>
+  </header>
+
+  <section class="talk-row">
+    <button class="talk" id="talk" type="button" aria-label="Hold to talk">
+      <span class="ring" id="ring" aria-hidden="true"></span>
+      <svg viewBox="0 0 48 84" aria-hidden="true">
+        <rect x="14" y="4" width="20" height="40" rx="10"/>
+        <path class="arc" d="M8 34v4a16 16 0 0 0 32 0v-4"/>
+        <path class="stem" d="M24 54v18M14 72h20"/>
+      </svg>
+      <span class="talk-label" id="talkLabel">Hold to talk</span>
+    </button>
+    <form class="type" id="typeForm">
+      <label for="typed">or type it</label>
+      <input id="typed" type="text" autocomplete="off" placeholder="a dog running on the beach">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <p class="status" id="status">1000 clips indexed. Hold the mic, or the space bar, and say what you want to see.</p>
+
+  <section class="results" id="results" hidden>
+    <div class="best">
+      <video id="bestVideo" muted loop playsinline autoplay></video>
+      <div class="best-meta">
+        <p class="heard"><span id="heardLabel">Closest caption to what you said</span><strong id="heard"></strong></p>
+        <p class="best-caption" id="bestCaption"></p>
+        <p class="best-score" id="bestScore"></p>
+        <button class="replay" id="replay" type="button" hidden>Play back what I said</button>
+      </div>
+    </div>
+    <ol class="tiles" id="tiles" aria-label="Other matches"></ol>
+  </section>
+</main>
+<script type="module" src="/say/say.js"></script>
+</body>
+</html>
